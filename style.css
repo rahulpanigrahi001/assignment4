@@ -1,0 +1,381 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: aliceblue;
+    size: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+html,body{
+    height: 100%;
+    width:  100%;
+    background-color: rgb(31, 26, 35);
+    box-sizing: border-box;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    background-color: rgb(31, 26, 35);
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 2fr;
+
+    grid-template-areas: "box1 box1 box2 box3 box4"
+                         "box1 box1 box2 box3 box5"
+                         "box6 box7 box8 box8 box5"
+                         "box6 box7 box8 box8 box9"
+                         "box10 box10 box10 box11 box11";
+    gap: 10px;
+
+}
+
+
+.box1{
+
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(140, 140, 140);
+    grid-area: box1;
+    padding: 10px;
+    position: relative;
+    border-radius: 1rem;
+
+}
+#roundimg{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+    position: absolute;
+    left: 40px;
+    top: 30px;
+    
+}
+
+.box1 h4{
+    position:absolute;
+    left: 150px;
+    top: 45px;
+
+}
+
+.box1 h6{
+    position:absolute;
+    left: 150px;
+    top: 70px;
+    
+}
+
+.box1 h1{
+    position: absolute;
+    top:  120px;
+    left: 40px;
+}
+
+.box1 p{
+    position: absolute;
+    left: 40px;
+    top: 200px;
+}
+
+.box2{
+
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(140, 140, 140);
+     grid-area: box2;
+     border-radius: 1rem;
+
+}
+
+#mobile{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.box3{
+
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(140, 140, 140);
+     grid-area: box3;
+     border-radius: 1rem;
+
+}
+
+#tablet{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.box4{
+
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(140, 140, 140);
+     grid-area: box4;
+     border-radius: 1rem;
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-rows: 1fr 1fr 1fr;
+     grid-template-areas: "fb x insta"
+                          "linkedin dribbble be";
+    padding: 10%;
+    align-items: center;
+    justify-content: center;
+
+}
+.fb{
+    grid-area:  fb;
+      align-items: center;
+    justify-content: center;
+    
+}
+.x{
+    grid-area: x;
+      align-items: center;
+    justify-content: center;
+}
+.insta{
+    grid-area: insta;
+      align-items: center;
+    justify-content: center;
+}
+.linkedin{
+    grid-area: linkedin;
+      align-items: center;
+    justify-content: center;
+}
+.dribbble{
+    grid-area: dribbble;
+      align-items: center;
+    justify-content: center;
+}
+.be{
+    grid-area: be;
+      align-items: center;
+    justify-content: center;
+}
+
+.box5{
+
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(140, 140, 140);
+     grid-area: box5;
+     border-radius: 1rem;
+     position: relative;
+    
+}
+
+.box5 p{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.box5 h3{
+    position: absolute;
+    top: 50px;
+    left: 20px;
+}
+
+.box6{
+
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(140, 140, 140);
+    grid-area: box6;
+    border-radius: 1rem;
+
+}
+
+#image{
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+   border-radius: 1rem;
+
+}
+
+.box7{
+
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(140, 140, 140);
+     grid-area: box7;
+     border-radius: 1rem;
+     position: relative;
+
+}
+
+.box7 p{
+    position: absolute;
+    left: 50px;
+    top: 20px;
+}
+
+.box7 h2{
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+
+#figma{
+    position: absolute;
+    left: 80px;
+    top: 120px;
+}
+#slack{
+    position: absolute;
+    left: 150px;
+    top: 120px;
+}
+#framer{
+    position: absolute;
+    left: 220px;
+    top: 120px;
+}
+#slack1{
+    position: absolute;
+    left: 60px;
+    top: 190px;
+}#webflow{
+    position: absolute;
+    left: 130px;
+    top: 190px;
+}#discord{
+    position: absolute;
+    left: 210px;
+    top: 190px;
+}
+
+.box8{
+
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(140, 140, 140);
+     grid-area: box8;
+     border-radius: 1rem;
+
+}
+
+#laptop{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    
+}
+.box9{
+
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(140, 140, 140);
+     grid-area: box9;
+     border-radius: 1rem;
+     position: relative;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+}
+.botton{
+position: absolute;
+height: 80px;
+width: 160px;
+border-radius: 50px;
+background-color: hsl(156, 4%, 23%);
+display: flex;
+align-items: center;
+justify-content: end;
+padding: 10px;
+
+}
+.round{
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    
+}
+.moon{
+    position: absolute;
+    height: 100%; 
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+}
+
+.box10{
+
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(140, 140, 140);
+     grid-area: box10;
+     border-radius: 1rem;
+     position: relative;
+
+}
+.box10 h1{
+position: absolute;
+top: 50px;
+left: 50px;
+
+
+}
+.box10 p{
+position: absolute;
+left:  50px;
+top: 140px;
+
+}
+.box10 img{
+position: absolute;
+right: 180px;
+top: 100px;
+
+}
+
+.box11{
+
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(140, 140, 140);
+    grid-area: box11;
+    border-radius: 1rem;
+    position: relative;
+    
+}
+
+#hello{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+#hi{
+    position: absolute;
+    top: 45px;
+    left: 120px;
+}
+
+.box11 h1{
+    position: absolute;
+    left: 50px;
+    top: 80px;
+}
+
+#collab{
+    position: absolute;
+    left: 50px;
+    top: 150px;
+}
+#arrow{
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+}
+
+
+
+
